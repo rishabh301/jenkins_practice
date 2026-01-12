@@ -1,25 +1,25 @@
-pipeline{
+pipeline {
     agent any 
-    stages{
-	stage('Build){
-	step{
-	echo "build step is sucessfull"
-}
-stage('Deploy'){
-step{
-	echo "deploy step is sucessfull"
-}
-}
-stage('Test'){
-step{
-	echo "test step is successful"
-}
-}
-stage('Resource'){
-	step{
-	echo "release step is sucessfull"
-}
-}
-
-}
+    stages {
+        stage('Build') {
+            steps {
+                echo "build step is successful"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo "deploy step is successful"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "test step is successful"
+            }
+        }
+        stage('Release') {
+            steps {
+                echo "release step is successful"
+            }
+        }
+    }
 }
